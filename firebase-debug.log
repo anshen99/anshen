@@ -1,0 +1,200 @@
+[debug] [2024-01-07T15:03:22.391Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T15:03:22.394Z] Command:       D:\Program Files\node.exe C:\Users\anson\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-07T15:03:22.395Z] CLI Version:   13.0.2
+[debug] [2024-01-07T15:03:22.395Z] Platform:      win32
+[debug] [2024-01-07T15:03:22.396Z] Node Version:  v20.10.0
+[debug] [2024-01-07T15:03:22.396Z] Time:          Sun Jan 07 2024 23:03:22 GMT+0800 (Malaysia Time)
+[debug] [2024-01-07T15:03:22.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T15:03:22.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T15:03:22.502Z] > authorizing via signed-in user (ansono990920@gmail.com)
+[debug] [2024-01-07T15:03:22.502Z] [iam] checking project ecommerce2023-fd8b2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-07T15:03:22.509Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions [none]
+[debug] [2024-01-07T15:03:22.510Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions x-goog-quota-user=projects/ecommerce2023-fd8b2
+[debug] [2024-01-07T15:03:22.510Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T15:03:23.288Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions 200
+[debug] [2024-01-07T15:03:23.289Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T15:03:23.290Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 [none]
+[debug] [2024-01-07T15:03:23.843Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 200
+[debug] [2024-01-07T15:03:23.843Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 {"projectId":"ecommerce2023-fd8b2","projectNumber":"43812281023","displayName":"ecommerce2023","name":"projects/ecommerce2023-fd8b2","resources":{"hostingSite":"ecommerce2023-fd8b2"},"state":"ACTIVE","etag":"1_4ab0272b-b565-4ab7-8e07-f232703e76e4"}
+[debug] [2024-01-07T15:03:28.866Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites pageToken=&pageSize=10
+[debug] [2024-01-07T15:03:29.609Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 200
+[debug] [2024-01-07T15:03:29.609Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites {"sites":[{"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-07T15:03:29.610Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 
+[debug] [2024-01-07T15:03:30.010Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 200
+[debug] [2024-01-07T15:03:30.010Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites {"sites":[{"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-07T15:03:30.010Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config [none]
+[debug] [2024-01-07T15:03:30.798Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config 200
+[debug] [2024-01-07T15:03:30.799Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config {"projectId":"ecommerce2023-fd8b2","appId":"1:43812281023:web:3def6e781e02cf1db1840a","storageBucket":"ecommerce2023-fd8b2.appspot.com","apiKey":"AIzaSyA-h2gIl8pL_Rb_ibHtsoKYFXIxai4P1yo","authDomain":"ecommerce2023-fd8b2.firebaseapp.com","messagingSenderId":"43812281023","measurementId":"G-470L8GGDCE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-07T15:03:42.262Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 [none]
+[debug] [2024-01-07T15:03:42.834Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 200
+[debug] [2024-01-07T15:03:42.835Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 {"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/components/Card/Card.tsx
+16:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/components/Header/Header.tsx
+13:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+13:17  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/4) ...
+
+[info]    Generating static pages (1/4) 
+
+[info]    Generating static pages (2/4) 
+
+[info]    Generating static pages (3/4) 
+
+[info] ReferenceError: document is not defined
+    at AE.s.current.s.current.window (D:\Development\ecommerce2023\.next\server\app\page.js:61:565)
+    at AE (D:\Development\ecommerce2023\.next\server\app\page.js:61:1835)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:45321)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:56919)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nE (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:44877)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:45472)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nE (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:44877)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: document is not defined
+    at AE.s.current.s.current.window (D:\Development\ecommerce2023\.next\server\app\page.js:61:565)
+    at AE (D:\Development\ecommerce2023\.next\server\app\page.js:61:1835)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:45321)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:56919)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nE (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:44877)
+    at nP (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:45472)
+    at n$ (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:61978)
+    at nE (D:\Development\ecommerce2023\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:44877)
+
+[info]  ✓ Generating static pages (4/4) 
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/page: /
+
+[debug] [2024-01-07T15:03:54.608Z] Error: ENOENT: no such file or directory, open 'D:\Development\ecommerce2023\build\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-01-07T15:05:51.278Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T15:05:51.281Z] Command:       D:\Program Files\node.exe C:\Users\anson\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-07T15:05:51.282Z] CLI Version:   13.0.2
+[debug] [2024-01-07T15:05:51.282Z] Platform:      win32
+[debug] [2024-01-07T15:05:51.282Z] Node Version:  v20.10.0
+[debug] [2024-01-07T15:05:51.282Z] Time:          Sun Jan 07 2024 23:05:51 GMT+0800 (Malaysia Time)
+[debug] [2024-01-07T15:05:51.283Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T15:05:51.383Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T15:05:51.384Z] > authorizing via signed-in user (ansono990920@gmail.com)
+[debug] [2024-01-07T15:05:51.384Z] [iam] checking project ecommerce2023-fd8b2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-07T15:05:51.387Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions [none]
+[debug] [2024-01-07T15:05:51.387Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions x-goog-quota-user=projects/ecommerce2023-fd8b2
+[debug] [2024-01-07T15:05:51.387Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T15:05:52.172Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions 200
+[debug] [2024-01-07T15:05:52.173Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce2023-fd8b2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-07T15:05:52.174Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 [none]
+[debug] [2024-01-07T15:05:52.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 200
+[debug] [2024-01-07T15:05:52.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2 {"projectId":"ecommerce2023-fd8b2","projectNumber":"43812281023","displayName":"ecommerce2023","name":"projects/ecommerce2023-fd8b2","resources":{"hostingSite":"ecommerce2023-fd8b2"},"state":"ACTIVE","etag":"1_4ab0272b-b565-4ab7-8e07-f232703e76e4"}
+[debug] [2024-01-07T15:05:57.554Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites pageToken=&pageSize=10
+[debug] [2024-01-07T15:05:58.231Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 200
+[debug] [2024-01-07T15:05:58.231Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites {"sites":[{"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-07T15:05:58.232Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 
+[debug] [2024-01-07T15:05:58.647Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites 200
+[debug] [2024-01-07T15:05:58.648Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites {"sites":[{"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-07T15:05:58.648Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config [none]
+[debug] [2024-01-07T15:05:59.396Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config 200
+[debug] [2024-01-07T15:05:59.396Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/webApps/-/config {"projectId":"ecommerce2023-fd8b2","appId":"1:43812281023:web:3def6e781e02cf1db1840a","storageBucket":"ecommerce2023-fd8b2.appspot.com","apiKey":"AIzaSyA-h2gIl8pL_Rb_ibHtsoKYFXIxai4P1yo","authDomain":"ecommerce2023-fd8b2.firebaseapp.com","messagingSenderId":"43812281023","measurementId":"G-470L8GGDCE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-01-07T15:06:10.646Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 [none]
+[debug] [2024-01-07T15:06:11.241Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 200
+[debug] [2024-01-07T15:06:11.241Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2 {"name":"projects/ecommerce2023-fd8b2/sites/ecommerce2023-fd8b2","defaultUrl":"https://ecommerce2023-fd8b2.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/components/Card/Card.tsx
+16:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/components/Header/Header.tsx
+13:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+13:17  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/4) ...
+
+[info]    Generating static pages (1/4) 
+
+[info]    Generating static pages (2/4) 
+
+[info]    Generating static pages (3/4) 
+
+[info]  ✓ Generating static pages (4/4) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    607 B          82.6 kB
+└ ○ /_not-found                          869 B          82.8 kB
++ First Load JS shared by all            82 kB
+  ├ chunks/938-3a78265cd183a4a0.js       26.8 kB
+  ├ chunks/fd9d1056-62561829c7c4dc48.js  53.3 kB
+  ├ chunks/main-app-11bea204fb86569c.js  220 B
+  └ chunks/webpack-e58aae51f4ae40f5.js   1.72 kB
+
+
+
+[info] ○  (Static)  prerendered as static content
+
+
+[debug] [2024-01-07T15:06:29.517Z] Error: ENOENT: no such file or directory, open 'D:\Development\ecommerce2023\build\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.

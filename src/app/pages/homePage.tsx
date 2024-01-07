@@ -1,10 +1,8 @@
 "use client"
 import React from 'react'
-import {Link} from 'react-router-dom'
 import styles from './homePage.module.css'
-import { PaperAirplaneIcon, CameraIcon, DocumentIcon } from '@heroicons/react/24/solid'
-import Badge from '../components/Card/Badge'
-import Button from '../components/Card/Button'
+import {  CameraIcon, DocumentIcon } from '@heroicons/react/24/solid'
+
 import Card from '../components/Card/Card'
 const HomePage = () => {
   return (
