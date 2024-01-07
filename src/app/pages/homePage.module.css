@@ -1,0 +1,29 @@
+/*card css*/
+.App {
+  
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: clamp(2rem, 4vw, 2.2rem);
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: hsl(248 80% 98%);
+  color: hsl(246 76% 4.9%);
+  }
+  
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: clamp(4rem, 4vw, 2.2rem);
+  }
+
+  
+  /*card css end (TBC)*/
